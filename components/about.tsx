@@ -16,20 +16,45 @@ export function About() {
             dir === 'rtl' ? 'lg:flex-row-reverse' : ''
           }`}
         >
-          {/* Image */}
-          <div className={`relative ${dir === 'rtl' ? 'lg:order-2' : ''}`}>
-            <div className='aspect-[5/5] rounded-lg overflow-hidden shadow-2xl'>
-              <Image
-                src='/images/ourStory/salah.jpg'
-                width={500}
-                height={600}
-                alt='Chef at Arabe Nobre'
-                className='w-full h-full object-cover'
-              />
+          {/* Images */}
+          <div
+            className={`grid grid-cols-1 sm:grid-cols-2 gap-6 ${
+              dir === 'rtl' ? 'lg:order-2' : ''
+            }`}
+          >
+            {/* Salah */}
+            <div className='relative'>
+              <div className='aspect-[5/5] rounded-lg overflow-hidden shadow-2xl'>
+                <Image
+                  src='/images/ourStory/salah.jpg'
+                  width={500}
+                  height={600}
+                  alt='Chef Salah Abunabout'
+                  className='w-full h-full object-cover'
+                />
+              </div>
+              <p className='mt-3 text-center font-semibold'>Salah Abunabout</p>
+              <p className='text-center text-sm text-muted-foreground'>
+                {t.about.founderHeadChef}
+              </p>
             </div>
-            {/* Decorative Element */}
-            <div className='absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/20 rounded-lg -z-10 hidden md:block' />
-            <div className='absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-lg -z-10 hidden md:block' />
+
+            {/* Jaafar */}
+            <div className='relative'>
+              <div className='aspect-[5/5] rounded-lg overflow-hidden shadow-2xl'>
+                <Image
+                  src='/images/ourStory/jaafar.jpg'
+                  width={500}
+                  height={600}
+                  alt='Chef Jaafar'
+                  className='w-full h-full object-cover'
+                />
+              </div>
+              <p className='mt-3 text-center font-semibold'>Jaafar</p>
+              <p className='text-center text-sm text-muted-foreground'>
+                {t.about.furnaceSpecialistChef}
+              </p>
+            </div>
           </div>
 
           {/* Content */}
@@ -40,19 +65,30 @@ export function About() {
             <h2 className='font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mt-3 mb-6'>
               {t.about.title}
             </h2>
+
             <div className='space-y-4 text-muted-foreground text-lg leading-relaxed'>
               <p>{t.about.description1}</p>
               <p>{t.about.description2}</p>
-              <p>{t.about.description3}</p>
+              <p>{t.about.jaafarDescription}</p>
             </div>
-            {/* Signature */}
-            <div className='mt-8 pt-8 border-t border-border'>
-              <p className='font-serif text-2xl text-primary italic'>
-                Chef Salah Abunabout
-              </p>
-              <p className='text-muted-foreground text-sm mt-1'>
-                Founder & Head Chef
-              </p>
+
+            {/* Signatures */}
+            <div className='mt-8 pt-8 border-t border-border space-y-3'>
+              <div>
+                <p className='font-serif text-xl text-primary italic'>
+                  Salah Abunabout
+                </p>
+                <p className='text-muted-foreground text-sm'>
+                  {t.about.founderHeadChef}
+                </p>
+              </div>
+
+              <div>
+                <p className='font-serif text-xl text-primary italic'>Jaafar</p>
+                <p className='text-muted-foreground text-sm'>
+                  {t.about.furnaceSpecialist}
+                </p>
+              </div>
             </div>
           </div>
         </div>

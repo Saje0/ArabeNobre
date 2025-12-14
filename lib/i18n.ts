@@ -51,6 +51,11 @@ export const translations = {
         'O Arabe Nobre nasceu de um sonho de unir duas tradições culinárias ricas — os sabores intensos e atemporais do Oriente Médio com o espírito acolhedor e caloroso do Brasil.',
       description3:
         'Cada prato é preparado com ingredientes frescos e receitas transmitidas por gerações, reinterpretadas com criatividade e um toque moderno que reflete a fusão dessas duas culturas.',
+      founderHeadChef: 'Fundador & Chef Executivo',
+      furnaceSpecialistChef: 'Chef Especialista em Forno',
+      furnaceSpecialist: 'Especialista em Forno',
+      jaafarDescription:
+        'Jaafar traz vasta experiência em culinária tradicional de forno, adquirida na Síria, Líbano e Egito, preservando sabores e técnicas autênticas.',
     },
     gallery: {
       title: 'Galeria',
@@ -154,6 +159,11 @@ export const translations = {
         'Arabe Nobre was born from a dream to unite two rich culinary traditions — the bold, timeless flavors of the Middle East and the warm, welcoming spirit of Brazil.',
       description3:
         'Every dish is crafted with fresh ingredients and recipes passed down through generations, reimagined with creativity and a modern touch that reflects the fusion of both cultures.',
+      founderHeadChef: 'Founder & Head Chef',
+      furnaceSpecialistChef: 'Furnace Specialist Chef',
+      furnaceSpecialist: 'Furnace Specialist',
+      jaafarDescription:
+        'Jaafar brings extensive experience in traditional furnace cooking, gained across Syria, Lebanon, and Egypt, preserving authentic flavors and techniques.',
     },
     gallery: {
       title: 'Gallery',
@@ -255,6 +265,11 @@ export const translations = {
         'وُلد عربي نوبري من حلمٍ يجمع بين ثقافتين غنيّتين بالتقاليد الطهوية و نكهات الشرق الأوسط القوية والعريقة واللمسة البرازيلية الدافئة والترحيبية',
       description3:
         'كل طبق نقدّمه يُحضَّر من مكوّنات طازجة ووصفات متوارثة عبر الأجيال، تمت إعادة تقديمها بإبداع ولمسة حديثة تعكس اندماج الثقافتين.',
+      founderHeadChef: 'المؤسس والطاهي الرئيسي',
+      furnaceSpecialistChef: 'طاهي متخصص في الأفران',
+      furnaceSpecialist: 'متخصص في الأفران',
+      jaafarDescription:
+        'يجلب جعفر خبرة واسعة في الطبخ التقليدي بالأفران، المكتسبة في سوريا ولبنان ومصر، محافظًا على النكهات والتقنيات الأصيلة.',
     },
     gallery: {
       title: 'معرض الصور',
