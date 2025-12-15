@@ -6,14 +6,18 @@ import { getTranslation } from '@/lib/i18n'
 import { X } from 'lucide-react'
 
 const galleryImages = [
-  '/images/gallery/arabic-esfiha-meat-pastries-on-a-wooden-board.jpg',
+  // '/images/gallery/arabic-esfiha-meat-pastries-on-a-wooden-board.jpg',
   '/images/gallery/middle-eastern-mezze-platter-colorful-dishes.jpg',
-  '/images/gallery/arabic-coffee-service-traditional-dallah.jpg',
-  '/images/gallery/kunafa-arabic-cheese-dessert-with-syrup.jpg',
+  '/images/gallery/gallery-1.jpg',
+  // '/images/gallery/arabic-coffee-service-traditional-dallah.jpg',
+  '/images/gallery/gallery-2.jpg',
+  // '/images/gallery/kunafa-arabic-cheese-dessert-with-syrup.jpg',
   '/images/gallery/baklava-dessert-with-nuts-honey-elegant-plating.jpg',
-  '/images/gallery/fresh-salad-tabouleh-bowl.jpg',
+  // '/images/gallery/fresh-salad-tabouleh-bowl.jpg',
   '/images/gallery/traditional-arabic-coffee-in-ornate-cup-with-dates.jpg',
-  // '/images/gallery/restaurant-bar-area-cocktails.jpg',
+  '/images/gallery/gallery03.jpg',
+  '/images/gallery/gallery-4.jpg',
+  '/images/gallery/gallery-5.jpg',
 ]
 
 export function Gallery() {
