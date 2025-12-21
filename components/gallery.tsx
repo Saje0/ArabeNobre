@@ -39,27 +39,25 @@ export function Gallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+        <div className='columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4'>
           {galleryImages.map((image, index) => (
             <button
               key={index}
               onClick={() => setSelectedImage(image)}
-              className={`group relative overflow-hidden rounded-lg ${
-                index === 0 || index === 5 ? 'md:col-span-2 md:row-span-2' : ''
-              }`}
+              className='group relative mb-4 w-full overflow-hidden rounded-2xl ring-1 ring-border/40 shadow-sm transition-transform duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 hover:shadow-lg hover:-translate-y-0.5 break-inside-avoid'
             >
-              <div
-                className={`${
-                  index === 0 || index === 5 ? 'aspect-square' : 'aspect-square'
-                }`}
-              >
+              <div className='aspect-square'>
                 <img
                   src={image || '/placeholder.svg'}
                   alt={`Gallery image ${index + 1}`}
-                  className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+                  className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]'
                 />
               </div>
-              <div className='absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors duration-300' />
+              <div className='absolute inset-0 bg-gradient-to-t from-foreground/40 via-foreground/0 to-foreground/0 opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
+              <div className='absolute bottom-3 left-3 rounded-full bg-foreground/80 px-2.5 py-1 text-xs font-medium tracking-wide text-background'>
+                {String(index + 1).padStart(2, '0')} /{' '}
+                {String(galleryImages.length).padStart(2, '0')}
+              </div>
             </button>
           ))}
         </div>
@@ -68,7 +66,7 @@ export function Gallery() {
       {/* Lightbox */}
       {selectedImage && (
         <div
-          className='fixed inset-0 z-50 bg-foreground/90 flex items-center justify-center p-4'
+          className='fixed inset-0 z-50 flex items-center justify-center bg-foreground/70 p-4 backdrop-blur-sm transition-opacity duration-300'
           onClick={() => setSelectedImage(null)}
         >
           <button
